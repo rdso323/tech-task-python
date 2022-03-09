@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime
 import unittest
 
 from LegacyCalculator import LegacyCalculator
@@ -9,13 +9,10 @@ class LegacyCalculator_test(unittest.TestCase):
       calculator = LegacyCalculator()
 
       # act
-      dates = []
-      print(dates)
-      calculator.calculate(dates)
-      result = calculator.calculate(dates)
+      result = calculator.calculate([])
 
       # assert
-      self.assertEqual(datetime.datetime.min, result.startTime())
+      self.assertEqual(datetime.min, result.startTime)
 
 
 if __name__ == '__main__':

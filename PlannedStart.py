@@ -1,10 +1,11 @@
-import datetime
-
+from datetime import datetime
 
 class PlannedStart:
-   def __init__(self) -> None:
-      pass
+   def __init__(self):
+      self.startTime = datetime.min
 
    def startTime(self):
-      print(datetime.datetime.min)
-      return datetime.datetime.min
+      return self.startTime
+   
+   def startTime(self, startTime):
+      self.startTime = startTime
