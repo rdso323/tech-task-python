@@ -1,0 +1,18 @@
+{
+    "name": "ma-python",
+    "dockerComposeFile": [
+       "docker-compose.yml"
+    ],
+    "service": "ma-python",
+    "workspaceFolder": "/src",
+    "extensions": [
+       "eamodio.gitlens",
+       "editorconfig.editorconfig",
+       "k--kato.docomment",
+       "shd101wyy.markdown-preview-enhanced",
+       "ms-python.python"
+    ],
+    "remoteUser": "dev",
+    "shutdownAction": "stopCompose"
+ }
+ 

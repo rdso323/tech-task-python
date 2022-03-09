@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+   ma-python:
+      container_name: ma-dev-python
+      hostname: ma-python.local
+      build:
+         context: .
+      working_dir: /src
+      volumes:
+         - ..:/src:cached
+      command: >
+         bash -c "sleep infinity"
+      networks:
+         ma:
+
+networks:
+   ma:
