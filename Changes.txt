@@ -1,0 +1,9 @@
+DONE
+- Created a variable for the duration of a week to be used 
+- Rewrote the counts to make it more readable
+- Initialised counts prior to if statement
+- Removed "requiredNumberInFirstWeek" as it's unneccesarily used
+- Added planned start for first week as option
+
+NEED TO DO
+- To test if planned start in first week
