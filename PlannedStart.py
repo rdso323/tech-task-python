@@ -1,15 +1,15 @@
 from datetime import datetime
 
 class PlannedStart:
-   def __init__(self, startTime = datetime.min, count = 0):
-      self.startTime = startTime
+   def __init__(self, start_time = datetime.min, count = 0):
+      self.start_time = start_time
       self.count = count
 
-   def startTime(self):
-      return self.startTime
+   def start_time(self):
+      return self.start_time
    
-   def startTime(self, startTime):
-      self.startTime = startTime
+   def start_time(self, start_time):
+      self.start_time = start_time
 
    def count(self):
       return self.count

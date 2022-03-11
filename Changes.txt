@@ -8,6 +8,9 @@ DONE
 - Initialised counts prior to if statement
 - Removed "requiredNumberInFirstWeek" as it's unneccesarily used
 - Added planned start for first week as option
+- To test if planned start in first week
+- Test if required days not met
+- Added test for "count" for "test_empty"
+- Changed naming convention from camelCase to undeerscore for variable and params
 
 NEED TO DO
-- To test if planned start in first week
