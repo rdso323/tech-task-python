@@ -13,3 +13,6 @@ class PlannedStart:
 
    def count(self):
       return self.count
+
+   def count(self,count):
+      self.count = count

@@ -28,15 +28,15 @@ class LegacyCalculator:
       # countsForSecondWeek = len([x for x in dates if x > startOfSecondWeek and x < startOfSecondWeek + timedelta(milliseconds = 7 * 24 * 60 * 60 * 1000)]) # add a week
 
       for x in dates:
-         if(x>=startOfFirstWeek and x<startOfSecondWeek):
+         if(x>startOfFirstWeek and x<startOfSecondWeek):
             countsForFirstWeek+=1
-         elif(x>=startOfSecondWeek and x<(startOfSecondWeek+one_week)):
+         elif(x>startOfSecondWeek and x<(startOfSecondWeek+one_week)):
             countsForSecondWeek+=1
 
 
       if( countsForSecondWeek > countsForFirstWeek and countsForSecondWeek >= requiredDays):
          plannedStart = PlannedStart(startOfSecondWeek, countsForSecondWeek)
-      else:
+      elif(countsForFirstWeek >= requiredDays):
          plannedStart = PlannedStart(startOfFirstWeek, countsForFirstWeek)
 
 
