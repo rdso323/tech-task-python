@@ -1,3 +1,7 @@
+ASSUMPTIONS
+- If the number of count days for the first week (countsForFirstWeek) meets the "requiredDays" number, the startdate is the first day of the first week
+- If the "requiredDays" number isn't met, return the minimum date possible with a count of 0.
+
 DONE
 - Created a variable for the duration of a week to be used 
 - Rewrote the counts to make it more readable
