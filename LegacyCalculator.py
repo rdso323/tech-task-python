@@ -20,6 +20,7 @@ class LegacyCalculator:
       counts_for_second_week=0
 
       start_off_first_week = dates[0]
+      
       # add a week
       start_of_second_week = start_off_first_week + one_week
 

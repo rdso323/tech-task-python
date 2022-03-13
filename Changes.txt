@@ -1,16 +1,22 @@
 ASSUMPTIONS
 - If the number of count days for the first week (countsForFirstWeek) meets the "requiredDays" number, the startdate is the first day of the first week
 - If the "requiredDays" number isn't met, return the minimum date possible with a count of 0.
+- Start date can only occur in week of the first date, or one week after
 
 DONE
+- Changed naming convention from camelCase to underscore for variable and params
 - Created a variable for the duration of a week to be used 
-- Rewrote the counts to make it more readable
+- Rewrote the count statements to make it more readable
 - Initialised counts prior to if statement
-- Removed "requiredNumberInFirstWeek" as it's unneccesarily used
+- Removed "requiredNumberInFirstWeek" as it's an unncessary variable
 - Added planned start for first week as option
 - To test if planned start in first week
+- Test if dates occured after second week
 - Test if required days not met
 - Added test for "count" for "test_empty"
-- Changed naming convention from camelCase to undeerscore for variable and params
+- In this scenario, no mock is required as there aren't any external dependencies to account for
 
 NEED TO DO
+
+EXTRA NOTES
+- Left in commented out code to use for comparison in demo
