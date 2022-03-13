@@ -15,6 +15,7 @@ class LegacyCalculator_test(unittest.TestCase):
       self.assertEqual(datetime.min, result.start_time)
       self.assertEqual(0, result.count)
 
+
    def test_with_one_date(self):
       # arrange
       calculator = LegacyCalculator()
@@ -45,7 +46,6 @@ class LegacyCalculator_test(unittest.TestCase):
       # assert
       self.assertEqual(datetime(2018, 1, 1), result.start_time)
       self.assertEqual(2, result.count)
-
 
 
    def test_with_many_dates_second_week(self):
@@ -102,6 +102,7 @@ class LegacyCalculator_test(unittest.TestCase):
       # assert
       self.assertEqual(datetime.min, result.start_time)
       self.assertEqual(0, result.count)
+
 
 if __name__ == '__main__':
    unittest.main()
